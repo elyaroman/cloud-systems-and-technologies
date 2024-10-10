@@ -107,7 +107,10 @@ http {
 
 Итого, если ввести sminex-news.com в браузер, можно увидеть, что происходит перенаправление с http на https и сайт отображается как надо:
 
+![sminex-news.com](screenshots/sminex-news.png)
 Аналогично и со вторым доменом techzone-catalog.com:
+
+![techzone-catalog.com](screenshots/techzone-catalog.png)
 
 Ура ура :)
 
