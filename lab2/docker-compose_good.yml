@@ -1,0 +1,53 @@
+version: '3.8'
+
+services:
+  web-first:
+    build:
+      context: .
+      dockerfile: /CloudDocker/Dockerfile_good
+    ports:
+      - "5555:8080"
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ConnectionStrings__PostgreSql: ${ConnectionStrings__PostgreSql}
+ 
+    networks:
+    - web-first-net
+
+  web-second:
+    build:
+      context: .
+      dockerfile: /CloudDocker/Dockerfile_good
+    ports:
+      - "4444:8080"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    networks:
+      - web-second-net
+
+  db:
+    container_name: db
+    image: postgres:17
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
+    ports:
+      - "6543:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    networks:
+      - db-net
+      - web-first-net 
+      - web-second-net 
+
+
+networks:
+  db-net:
+    driver: bridge
+  web-first-net:
+    driver: bridge
+  web-second-net:
+    driver: bridge
+volumes:
+  pgdata: {}
