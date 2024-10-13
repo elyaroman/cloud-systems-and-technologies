@@ -1,0 +1,33 @@
+# Использование тега latest
+FROM mcr.microsoft.com/dotnet/aspnet:latest AS base
+# Использование root пользователя
+USER root
+WORKDIR /app
+EXPOSE 8080
+EXPOSE 8081
+
+# Устанавливаем переменные среды
+ENV UserDb="UserDb"
+ENV PasswordDb="PasswordDb"
+
+FROM mcr.microsoft.com/dotnet/sdk:latest AS build
+ARG BUILD_CONFIGURATION=Release
+WORKDIR /src
+COPY ["CloudDocker/CloudDocker.csproj", "CloudDocker/"]
+RUN dotnet restore "./CloudDocker/./CloudDocker.csproj"
+COPY . .
+
+WORKDIR "/src/CloudDocker"
+RUN dotnet build "./CloudDocker.csproj" -c $BUILD_CONFIGURATION -o /app/build
+
+FROM build AS publish
+ARG BUILD_CONFIGURATION=Release
+RUN dotnet publish "./CloudDocker.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
+
+FROM base AS final
+WORKDIR /app
+COPY --from=publish /app/publish .
+
+
+
+ENTRYPOINT ["dotnet", "CloudDocker.dll"]

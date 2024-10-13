@@ -1,0 +1,6 @@
+@CloudDocker_HostAddress = http://localhost:5134
+
+GET {{CloudDocker_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
