@@ -12,7 +12,9 @@ services:
       ConnectionStrings__PostgreSql: ${ConnectionStrings__PostgreSql}
  
     networks:
-    - web-first-net
+      - web-first-net
+    depends_on:
+      - db
 
   web-second:
     build:
@@ -24,6 +26,8 @@ services:
       - ASPNETCORE_ENVIRONMENT=Development
     networks:
       - web-second-net
+    depends_on:
+      - db
 
   db:
     container_name: db
