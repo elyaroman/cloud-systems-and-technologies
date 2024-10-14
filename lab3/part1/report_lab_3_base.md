@@ -7,7 +7,7 @@
 
 ## Выполнение задания
 
-Сначала был скачан minikube с помощью команды 'brew install minikube'.
+Сначала был скачан minikube с помощью команды `brew install minikube`.
 
 ![](screenshots/img1.png)
 
