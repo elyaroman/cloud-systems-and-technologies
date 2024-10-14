@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+metadata: 
+  name: html-page-config
+data:
+  index.html: |
+    <html>
+      <head>Page</head>
+      <body>
+        <h1>The work is completed successfully</h1>
+      </body>
+    </html>
