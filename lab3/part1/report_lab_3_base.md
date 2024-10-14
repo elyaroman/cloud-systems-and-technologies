@@ -19,9 +19,9 @@
 
 ![](screenshots/img3.png)
 
-Файл 'html-page-config.yaml':
+Файл `html-page-config.yaml`:
 
-'''
+```
 apiVersion: v1
 kind: ConfigMap
 metadata: 
@@ -34,13 +34,13 @@ data:
         <h1>The work is completed successfully</h1>
       </body>
     </html>
-'''
+```
 
-Здесь под тегом 'data' был указан файл 'index.html' с html-кодом (приписан после '|') страницы, которая станет доступна при развёртывании сервиса. 
+Здесь под тегом `data` был указан файл `index.html` с html-кодом (приписан после `|`) страницы, которая станет доступна при развёртывании сервиса. 
 
-Файл 'service.yaml':
+Файл `service.yaml`:
 
-'''
+```
 apiVersion: v1
 kind: Service
 metadata: 
@@ -53,13 +53,13 @@ spec:
     - port: 80
       targetPort: 80
       nodePort: 30003
-'''
+```
 
-Здесь в тегах 'spec -> ports -> port, targetPort' было указано использовать 80 порт для доступа к сервису - доступ к html-странице по протоколу 'http'. Для доступа снаружи был выбран 'nodePort' равный 30003.
+Здесь в тегах `spec -> ports -> port, targetPort` было указано использовать 80 порт для доступа к сервису - доступ к html-странице по протоколу `http`. Для доступа снаружи был выбран `nodePort` равный 30003.
 
-Файл 'deployment.yaml':
+Файл `deployment.yaml`:
 
-'''
+```
 apiVersion: apps/v1
 kind: Deployment
 metadata: 
@@ -86,9 +86,9 @@ spec:
       - name: html-volume
         configMap: 
           name: html-page-config
-'''
+```
 
-Здесь в тегах 'spec -> template -> spec -> containers, volumes' было указано использовать контейнер 'nginx' для запуска html-страницы, которая доступна в 'configMap'. Для контейнера было также указано использовать 80 порт. 
+Здесь в тегах `spec -> template -> spec -> containers, volumes` было указано использовать контейнер `nginx` для запуска html-страницы, которая доступна в `configMap`. Для контейнера было также указано использовать 80 порт. 
 
 После чего был (не) запущен minikube.
 
@@ -108,7 +108,7 @@ spec:
 ![](screenshots/img8.png)
 ![](screenshots/img9.png)
 
-Для открытия страницы сервиса был получен его адрес. При этом доступ к странице осуществляется не по ip-адресу 'minikube' и указаному в 'service.yaml' порту ('nodePort'), а через 'localhost' и случайный порт, который выбрал 'minikube'. Это произошло, потому что 'minikube' автоматически настраивает проксирование для сервисов с типом 'NodePort'.
+Для открытия страницы сервиса был получен его адрес. При этом доступ к странице осуществляется не по ip-адресу `minikube` и указаному в `service.yaml` порту (`nodePort`), а через `localhost` и случайный порт, который выбрал `minikube`. Это произошло, потому что `minikube` автоматически настраивает проксирование для сервисов с типом `NodePort`.
 
 ![](screenshots/img10.png)
 
