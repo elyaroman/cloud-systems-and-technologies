@@ -161,9 +161,28 @@ location /styles/ {
   alias D:/nginx-1.27.2/html/styles;  
 }
 ```
-### 
+### SSL/TLS настройки
 
+По умолчанию nginx может использовать устаревшие SSL/TLS-протоколы. Сейчас протоколы версии ниже, чем TLS 1.2 или 1.3, считаются небезопасными, так как подвержены атаке Poodle. Расшифровается как Padding Oracle (лазейка в безопасности некоторых систем, использующих шифрование) On Downgraded (когда зашифрованное соединение между Вашим устройством и веб-сайтом или сервисом становится менее безопасным) Legacy Encryption (старые, устаревшие методы шифрования данных). Иными словами, это атака на старые версии SSL, которые являются менее защищёнными, позволяющая украсть и расшифровать конфиденциальные данные.
 
+Для предотвращения атаки стоит задать в конфиге nginx версию TLS не ниже 1.2:
+
+```ssl_protocols TLSv1.2 TLSv1.3;```
+
+Также стоит отключить слабые или устаревшие комплекты шифрования. Они могут привести к уязвимости, например, к перебою и поэтому нужно разрешить только надёжный шифр. Рекомендуемый набор шифров:
+
+```ssl_ciphers ECDHE-RSA-AES256-GCM-SHA512:DHE-RSA-AES256-GCM-SHA512:ECDHE-RSA-AES256-GCM-SHA384:DHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-SHA384;```
+
+Чтобы разрешить использование только указанных нами шифров, необходимо записать:
+```
+ssl_prefer_server_ciphers on;
+ssl_session_cache shared:SSL:10m;
+```
+
+Порядок в строке ssl_ciphers имеет значение: чем ближе он к началу, тем выше его приоритет. Если на клиенте не окажется шифров, разрешённых на сервере, последний закроет с ним соединение.
+
+## Вывод:
+В данной лабораторной работе был настроен nginx сервер на операционной системе Windows, содержащий два виртульных хоста, с использованием сертификатов SSL, редиректром http-запросов на https, а также псевдонимов alias. Во второй части лабораторной работы были рассмотрены и устранены уязвимости, связанные с безопасными заголовками, path traversal, а также SSL/TLS протоколами.
 
 ## Список полезных источников
 1. https://levashove.ru/install-nginx-server-windows
@@ -174,3 +193,6 @@ location /styles/ {
 6. https://linuxcapable.com/how-to-configure-security-headers-in-nginx/
 7. https://blog.dubkov.org/learn/secure/security-headers-for-nginx/
 8. https://habr.com/ru/articles/745718/
+9. https://www.easycoding.org/2015/01/19/usilivaem-bezopasnost-https-v-nginx.html
+10. https://raymii.org/s/tutorials/Strong_SSL_Security_On_nginx.html
+11. https://www.ssldragon.com/ru/blog/what-is-poodle-attack-ssl/
