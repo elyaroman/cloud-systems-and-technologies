@@ -106,10 +106,10 @@ serverFiles:
               description: "nginx died sorry"
   ```
   
-  <li>показало сообщение о том что <s>бобик</s> NGINX сдох</li>
+  <li>показало сообщение о том что <s>бобик</s> nginx сдох</li>
   <img src="https://github.com/elyaroman/cloud-systems-and-technologies/blob/main/lab%205/images/asterisk/7.jpg" alt="7" title="title">
   
-  <li>в алертманагере тоже показало, что NGINX сдох</li>
+  <li>в алертманагере тоже показало, что nginx сдох</li>
   <img src="https://github.com/elyaroman/cloud-systems-and-technologies/blob/main/lab%205/images/asterisk/8.jpg" alt="8" title="title">
 
   <li>Был пропущен момент запуска алертманагера</li>
