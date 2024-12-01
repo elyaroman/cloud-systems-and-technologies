@@ -87,8 +87,8 @@
             parse_mode: Markdown
             message: |-
               {{ range .Alerts }}
-                ❗ *Alert:* {{ .Annotations.summary }}
-                📝 *Description:* {{ .Annotations.description }}
+                  *Alert:* {{ .Annotations.summary }}
+                  *Description:* {{ .Annotations.description }}
               {{ end }}
 
 serverFiles:
