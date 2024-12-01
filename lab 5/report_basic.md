@@ -8,12 +8,12 @@
 <ol>
   <li>Запускаем консоль с правами администратора (иначе ничерта не заработает и не установится)</li>
   <li>Установка chocolatey</li> 
-  <img src="https://github.com/elyaroman/cloud-systems-and-technologies/blob/main/lab%205/images/basic/1-1.jpg" alt="1-1" title="title">
+  <img src="https://github.com/elyaroman/cloud-systems-and-technologies/blob/main/lab%205/images/basic/1-1.jpg" alt="1-1" title="title max-width:70%">
 
   <li>Перезапуск консоли - о святая перезагрузочка</li>
 
   <li>choco --version, показывает версию - значит всё гут</li>
-  <img src=" https://github.com/elyaroman/cloud-systems-and-technologies/blob/main/lab%205/images/basic/1-2.jpg" alt="1-2" title="title">
+  <img src="https://github.com/elyaroman/cloud-systems-and-technologies/blob/main/lab%205/images/basic/1-2.jpg" alt="1-2" title="title">
 
   <li>Успешная установка minikube</li>
   <img src="https://github.com/elyaroman/cloud-systems-and-technologies/blob/main/lab%205/images/basic/1-3.jpg" alt="1-3" title="title">
