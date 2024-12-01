@@ -8,26 +8,27 @@
 <ol>
   <li>Запускаем консоль с правами администратора (иначе ничерта не заработает и не установится)</li>
   <li>Установка chocolatey</li> 
-  скрин 1
+  https://github.com/elyaroman/cloud-systems-and-technologies/blob/main/lab%205/images/basic/1-1.jpg
   <li>Перезапуск консоли - о святая перезагрузочка</li>
   <li>choco --version, показывает версию - значит всё гут</li>
-  скрин 2
+  https://github.com/elyaroman/cloud-systems-and-technologies/blob/main/lab%205/images/basic/1-2.jpg
   <li>Успешная установка minikube</li>
-  скрин 3
+  https://github.com/elyaroman/cloud-systems-and-technologies/blob/main/lab%205/images/basic/1-3.jpg
   <li>Установка helm - и вполне себе успешная</li>
-  скрин 4-5
+  https://github.com/elyaroman/cloud-systems-and-technologies/blob/main/lab%205/images/basic/1-4.jpg
+  https://github.com/elyaroman/cloud-systems-and-technologies/blob/main/lab%205/images/basic/1-5.jpg
   <li>Запуск minikube и проверка статуса кластера</li>
-  скрин 6
+  https://github.com/elyaroman/cloud-systems-and-technologies/blob/main/lab%205/images/basic/1-6.jpg
   <li>Добавление репозитория с чарта Prometheus</li>
-  скрин 7
+  https://github.com/elyaroman/cloud-systems-and-technologies/blob/main/lab%205/images/basic/1-7.jpg
   <li>Установка Prometheus</li>
-  скрин 8
+  https://github.com/elyaroman/cloud-systems-and-technologies/blob/main/lab%205/images/basic/1-8.jpg
   <li>Добавление репозитория с чарта Grafana</li>
-  скрин 9
+  https://github.com/elyaroman/cloud-systems-and-technologies/blob/main/lab%205/images/basic/1-9.jpg
    <li>Установка Grafana</li>
-  скрин 11
+  https://github.com/elyaroman/cloud-systems-and-technologies/blob/main/lab%205/images/basic/1-11.jpg
    <li>Обновляем репу</li>
-  скрин 10
+  https://github.com/elyaroman/cloud-systems-and-technologies/blob/main/lab%205/images/basic/1-10.jpg
 </ol>
 
 <h4>Grafana-nananana</h4>
