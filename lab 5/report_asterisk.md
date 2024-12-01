@@ -6,19 +6,32 @@
 <b><h3>Выполнение:</h3></b>
 <ol>
   <li>С помощью BotFather создан тг-бот</li>
-  скрин 1
+  <img src="https://github.com/elyaroman/cloud-systems-and-technologies/blob/main/lab%205/images/asterisk/1.jpg" alt="1" title="title"> 
+  
   <li>Создан новый Helm Chart</li>
-  скрин 2
+  <img src="https://github.com/elyaroman/cloud-systems-and-technologies/blob/main/lab%205/images/asterisk/2.jpg" alt="2" title="title">
+  
   <li>Изменены файлы deployment.yaml и service.yaml</li>
-  скрин 3
+  <img src="https://github.com/elyaroman/cloud-systems-and-technologies/blob/main/lab%205/images/asterisk/3.jpg" alt="3" title="title"> 
+
+  <i>Файлы, собственно, прилагаются:</i>
+  <script src="https://github.com/elyaroman/cloud-systems-and-technologies/blob/main/lab%205/images/asterisk/deployment.yaml" defer></script>
+  <script src="https://github.com/elyaroman/cloud-systems-and-technologies/blob/main/lab%205/images/asterisk/service.yaml" defer></script>
+  
   <li>Устанавливаем Helm Chart в кластере кубера</li>
-  скрин 4
-  <li>выкраден токен для тг-бота из FATHERRR, также выкраден id_chat из конфига по ссылке https://api.telegram.org/bot<i>секреееет</i>/getUpdates (в данном случае это id пользователя</li>
-  скрин 6
-  <i>здесь должен быть мем...</i>
+  <img src="https://github.com/elyaroman/cloud-systems-and-technologies/blob/main/lab%205/images/asterisk/4.jpg" alt="4" title="title">
+  
+  <li>выкраден токен для тг-бота из FATHERRR, также выкраден id_chat из конфига по ссылке https://api.telegram.org/bot<i>секреееет</i>/getUpdates (в данном случае это id пользователя)</li>
+  <img src="https://github.com/elyaroman/cloud-systems-and-technologies/blob/main/lab%205/images/asterisk/6.jpg" alt="6" title="title">
+  
   <li>о боги девопса, заработало! апгрейднули кофниг и всё, теперь работает...</li>
-  скрин 5
+  <img src="https://github.com/elyaroman/cloud-systems-and-technologies/blob/main/lab%205/images/asterisk/5.jpg" alt="5" title="title">
+  
   <li>показало сообщение о том что <s>бобик</s> NGINX сдох</li>
-  скрин 7
+  <img src="https://github.com/elyaroman/cloud-systems-and-technologies/blob/main/lab%205/images/asterisk/7.jpg" alt="7" title="title">
+  
   <li>в алертманагере тоже показало, что NGINX сдох</li>
-  скрин 8
+  <img src="https://github.com/elyaroman/cloud-systems-and-technologies/blob/main/lab%205/images/asterisk/8.jpg" alt="8" title="title">
+
+  <b><h3>Выводы</h3></b>
+  Эта лаба тоже убила очень много сил. К сожалению. Очень трудно было разбираться, как создавать телеграм-бота, так как ранее не было опыта. Хорошо, что относительно простой способ нашелся. Искать chat_id тоже стало испытанием. Благо, с этой лабой теперь можно и бота сделать будет при огромном желании. Насчет алертменеджера, хочется сказать, что в целом полезная вещь, если нужен мониторинг сети 24/7, чтоб знать, когда что-то <i>(например, бобик)</i> умерло или легло. Кстати, тот кот из базового отчёта сюда тоже вполне подходит.
