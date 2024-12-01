@@ -15,8 +15,8 @@
   <img src="https://github.com/elyaroman/cloud-systems-and-technologies/blob/main/lab%205/images/asterisk/3.jpg" alt="3" title="title"> 
 
   <i>Файлы, собственно, прилагаются:</i>
-  <script src="https://github.com/elyaroman/cloud-systems-and-technologies/blob/main/lab%205/images/asterisk/deployment.yaml" defer></script>
-  <script src="https://github.com/elyaroman/cloud-systems-and-technologies/blob/main/lab%205/images/asterisk/service.yaml" defer></script>
+  <script src="https://github.com/elyaroman/cloud-systems-and-technologies/blob/main/lab%205/images/asterisk/deployment.yaml"></script>
+  <script src="https://github.com/elyaroman/cloud-systems-and-technologies/blob/main/lab%205/images/asterisk/service.yaml"></script>
   
   <li>Устанавливаем Helm Chart в кластере кубера</li>
   <img src="https://github.com/elyaroman/cloud-systems-and-technologies/blob/main/lab%205/images/asterisk/4.jpg" alt="4" title="title">
