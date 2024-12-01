@@ -112,7 +112,7 @@ serverFiles:
   <li>в алертманагере тоже показало, что nginx сдох</li>
   <img src="https://github.com/elyaroman/cloud-systems-and-technologies/blob/main/lab%205/images/asterisk/8.jpg" alt="8" title="title">
 
-  <li>Был пропущен момент запуска алертманагера</li>
+  <li>Был пропущен момент запуска алертманагера, вот:</li>
   <img src="https://github.com/elyaroman/cloud-systems-and-technologies/blob/main/lab%205/images/asterisk/8.1.jpg" alt="8.1" title="title">
 
   <li>В списке подов, естественно, он отображается</li>
