@@ -64,7 +64,7 @@
   <li>о боги девопса, заработало! апгрейднули кофниг и всё, теперь работает...</li>
   <img src="https://github.com/elyaroman/cloud-systems-and-technologies/blob/main/lab%205/images/asterisk/5.jpg" alt="5" title="title">
 
-  а вот и коФНиг (честно, случайно написала, но так прикольнее звучит...)
+  а вот и коФНиг (честно, это очепятка, но так прикольнее звучит...)
 
   alert.yaml
   ```
