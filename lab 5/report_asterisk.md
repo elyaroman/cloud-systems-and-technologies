@@ -63,6 +63,48 @@
   
   <li>о боги девопса, заработало! апгрейднули кофниг и всё, теперь работает...</li>
   <img src="https://github.com/elyaroman/cloud-systems-and-technologies/blob/main/lab%205/images/asterisk/5.jpg" alt="5" title="title">
+
+  а вот и коФНиг (честно, случайно написала, но так прикольнее звучит...)
+
+  alert.yaml
+  ```
+  alertmanager:
+  config:
+    global:
+      resolve_timeout: 1m
+      telegram_api_url: "https://api.telegram.org"
+
+    route:
+      receiver: telegram
+
+    receivers:
+      - name: telegram
+        telegram_configs:
+          - chat_id: секрееет 
+            bot_token: секрееет
+            api_url: "https://api.telegram.org"
+            send_resolved: true
+            parse_mode: Markdown
+            message: |-
+              {{ range .Alerts }}
+                ❗ *Alert:* {{ .Annotations.summary }}
+                📝 *Description:* {{ .Annotations.description }}
+              {{ end }}
+
+serverFiles:
+  alerting_rules.yml:
+    groups:
+      - name: nginx-alerts
+        rules:
+          - alert: NginxDown
+            expr: absent(up{job="kubernetes-pods", app="nginx"} == 1)
+            for: 1m
+            labels:
+              severity: critical
+            annotations:
+              summary: "nginx died sorry"
+              description: "nginx died sorry"
+  ```
   
   <li>показало сообщение о том что <s>бобик</s> NGINX сдох</li>
   <img src="https://github.com/elyaroman/cloud-systems-and-technologies/blob/main/lab%205/images/asterisk/7.jpg" alt="7" title="title">
