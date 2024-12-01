@@ -21,7 +21,7 @@
   <li>Устанавливаем Helm Chart в кластере кубера</li>
   <img src="https://github.com/elyaroman/cloud-systems-and-technologies/blob/main/lab%205/images/asterisk/4.jpg" alt="4" title="title">
   
-  <li>выкраден токен для тг-бота из FATHERRR, также выкраден id_chat из конфига по ссылке https://api.telegram.org/bot<i>секреееет</i>/getUpdates (в данном случае это id пользователя)</li>
+  <li>выкраден токен для тг-бота из FATHERRR, также выкраден id_chat из конфига по ссылке <a href="https://api.telegram.org/bot<i>секреееет</i>/getUpdates">https://api.telegram.org/bot<i>секреееет</i>/getUpdates</a> (в данном случае это id пользователя)</li>
   <img src="https://github.com/elyaroman/cloud-systems-and-technologies/blob/main/lab%205/images/asterisk/6.jpg" alt="6" title="title">
   
   <li>о боги девопса, заработало! апгрейднули кофниг и всё, теперь работает...</li>
