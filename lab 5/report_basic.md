@@ -8,7 +8,7 @@
 <ol>
   <li>Запускаем консоль с правами администратора (иначе ничерта не заработает и не установится)</li>
   <li>Установка chocolatey</li> 
-  <img src="https://github.com/elyaroman/cloud-systems-and-technologies/blob/main/lab%205/images/basic/1-1.jpg" alt="1-1" title="title max-width:70%">
+  <img src="https://github.com/elyaroman/cloud-systems-and-technologies/blob/main/lab%205/images/basic/1-1.jpg" alt="1-1" title="title size:70%">
 
   <li>Перезапуск консоли - о святая перезагрузочка</li>
 
