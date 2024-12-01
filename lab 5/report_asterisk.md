@@ -15,6 +15,7 @@
   <img src="https://github.com/elyaroman/cloud-systems-and-technologies/blob/main/lab%205/images/asterisk/3.jpg" alt="3" title="title" style="width: 50%"> 
 
   <i>Файлы, собственно, прилагаются:</i>
+  
   service.yaml
   ```
   apiVersion: v1
