@@ -1,7 +1,7 @@
 <b><h1>Лабораторная работа №5</h1></b>
 
 <b><h3>Сложное задание:</h3></b>
-Настроить алерт кодом IaaC (например через конфиг алертменеджера, главное - не в интерфейсе графаны:), показать пример его срабатывания. Попробовать сделать так, чтобы он приходил, например, на почту или в телеграм. Если не получится - показать имеющийся результат и аргументировать, почему дальше невозможно реализовать. <i>спойлер: у нас все получилось! (надеюсь...)</i>
+Настроить алерт кодом IaaC (например через конфиг алертменеджера, главное - не в интерфейсе графаны:), показать пример его срабатывания. Попробовать сделать так, чтобы он приходил, например, на почту или в телеграм. Если не получится - показать имеющийся результат и аргументировать, почему дальше невозможно реализовать. <i>спойлер: у нас все получилось!</i>
 
 <b><h3>Выполнение:</h3></b>
 <ol>
@@ -15,8 +15,45 @@
   <img src="https://github.com/elyaroman/cloud-systems-and-technologies/blob/main/lab%205/images/asterisk/3.jpg" alt="3" title="title"> 
 
   <i>Файлы, собственно, прилагаются:</i>
-  <script src="https://github.com/elyaroman/cloud-systems-and-technologies/blob/main/lab%205/images/asterisk/deployment.yaml"></script>
-  <script src="https://github.com/elyaroman/cloud-systems-and-technologies/blob/main/lab%205/images/asterisk/service.yaml"></script>
+  service.yaml
+  '''
+      apiVersion: v1
+  kind: Service
+  metadata:
+    name: {{ .Release.Name }}-nginx-service
+  spec:
+    selector:
+      app: nginx
+    ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+    type: NodePort
+  '''
+
+  deployment.yaml
+  '''
+    apiVersion: apps/v1
+  kind: Deployment
+  metadata:
+    name: {{ .Release.Name }}-nginx
+  spec:
+    replicas: 2
+    selector:
+      matchLabels:
+        app: nginx
+    template:
+      metadata:
+        labels:
+          app: nginx
+      spec:
+        containers:
+        - name: nginx
+          image: nginx:1.14.2
+          ports:
+          - containerPort: 80
+  '''
+  
   
   <li>Устанавливаем Helm Chart в кластере кубера</li>
   <img src="https://github.com/elyaroman/cloud-systems-and-technologies/blob/main/lab%205/images/asterisk/4.jpg" alt="4" title="title">
