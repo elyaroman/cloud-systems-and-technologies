@@ -17,7 +17,7 @@
   <i>Файлы, собственно, прилагаются:</i>
   service.yaml
   ```
-      apiVersion: v1
+  apiVersion: v1
   kind: Service
   metadata:
     name: {{ .Release.Name }}-nginx-service
@@ -33,7 +33,7 @@
 
   deployment.yaml
   ```
-    apiVersion: apps/v1
+  apiVersion: apps/v1
   kind: Deployment
   metadata:
     name: {{ .Release.Name }}-nginx
