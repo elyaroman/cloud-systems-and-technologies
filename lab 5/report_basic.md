@@ -8,7 +8,7 @@
 <ol>
   <li>Запускаем консоль с правами администратора (иначе ничерта не заработает и не установится)</li>
   <li>Установка chocolatey</li> 
-  <img src="https://github.com/elyaroman/cloud-systems-and-technologies/blob/main/lab%205/images/basic/1-1.jpg" alt="1-1" title="title size:70%">
+  <img src="https://github.com/elyaroman/cloud-systems-and-technologies/blob/main/lab%205/images/basic/1-1.jpg" alt="1-1" title="title>
 
   <li>Перезапуск консоли - о святая перезагрузочка</li>
 
@@ -28,7 +28,6 @@
   <li>Добавление репозитория с чарта Prometheus</li>
   <img src="https://github.com/elyaroman/cloud-systems-and-technologies/blob/main/lab%205/images/basic/1-7.jpg" alt="1-7" title="title">
   
-
   <li>Установка Prometheus</li>
   <img src="https://github.com/elyaroman/cloud-systems-and-technologies/blob/main/lab%205/images/basic/1-8.jpg" alt="1-8" title="title">
  
@@ -45,25 +44,32 @@
 <h4>Grafana-nananana</h4>
 <ol>
   <li>Используем утилиту certutil, которая доступна по умолчанию в Windows, чтоб выкрасть пароль как истинные хацкеры</li>
-  <img src="" alt="1-4" title="title"> скрин 1
+  <img src="https://github.com/elyaroman/cloud-systems-and-technologies/blob/main/lab%205/images/basic/2-1.jpg" alt="2-1" title="title"> 
+  
   <li>Меняем пароль для простоты ввода</li>
-  <img src="" alt="1-4" title="title">   скрин 3.1
-  <li>Перенаправляем локальный порт 3000 на порт 80 сервиса Grafana</li>
-   <img src="" alt="1-4" title="title">  скрин 2
-  <li>Теперь по урле http://localhost:3000 доступна графана</li>
-   <img src="" alt="1-4" title="title">  скрин 3
+  <img src="https://github.com/elyaroman/cloud-systems-and-technologies/blob/main/lab%205/images/basic/2-3.1.jpg" alt="2-3.1" title="title">
+  
+  <li>Перенаправляем локальный порт 3000 на порт 80 сервиса Grafana. Теперь она доступна по урле http://localhost:3000</li>
+   <img src="https://github.com/elyaroman/cloud-systems-and-technologies/blob/main/lab%205/images/basic/2-2.jpg" alt="2-2" title="title"> 
+   
   <li>Вводим логин-пароль - все гут</li>
-  <img src="" alt="1-4" title="title">   скрин 5
+  <img src="https://github.com/elyaroman/cloud-systems-and-technologies/blob/main/lab%205/images/basic/2-5.jpg" alt="2-5" title="title">  
+  
   <li>Алиллуя господи запустилось</li>
-  <img src="" alt="1-4" title="title">   скрин 6
+  <img src="https://github.com/elyaroman/cloud-systems-and-technologies/blob/main/lab%205/images/basic/2-6.jpg" alt="2-6" title="title">  
+  
   <li>Добавляем источник данных</li>
-  <img src="" alt="1-4" title="title">   скрин 7
+  <img src="https://github.com/elyaroman/cloud-systems-and-technologies/blob/main/lab%205/images/basic/2-7.jpg" alt="2-7" title="title">  
+  
   <li>В настройках указываем ур<s>су</s>лу http://prometheus-server.default.svc.cluster.local</li>
-  <img src="" alt="1-4" title="title">   скрин 8
+  <img src="https://github.com/elyaroman/cloud-systems-and-technologies/blob/main/lab%205/images/basic/2-8.jpg" alt="2-8" title="title">   
+  
   <li>Затем сохранили - добавляем визуализацию</li>
-  <img src="" alt="1-4" title="title">   скрин 9
+  <img src="https://github.com/elyaroman/cloud-systems-and-technologies/blob/main/lab%205/images/basic/2-9.jpg" alt="2-9" title="title">  
+  
   <li>Метрика etcd_request_duration_seconds_count показывает общее кол-во запросов, выполненных к etcd - система хранения всяких конфиг-данных, что позволяет оценить общую нагрузку на систему</li>
-  <img src="" alt="1-4" title="title">   скрин 10
+  <img src="https://github.com/elyaroman/cloud-systems-and-technologies/blob/main/lab%205/images/basic/2-10.jpg" alt="2-10" title="title"> 
+  
   <li>Метрика authorization_duration_seconds_sum показывает сколько тратит пользователь на авторизацию</li>
-  <img src="" alt="1-4" title="title">   скрин 11
+  <img src="https://github.com/elyaroman/cloud-systems-and-technologies/blob/main/lab%205/images/basic/2-11.jpg" alt="2-11" title="title"> 
 </ol>
