@@ -6,7 +6,7 @@
 <b><h3>Выполнение:</h3></b>
 <ol>
   <li>С помощью BotFather создан тг-бот</li>
-  <img src="https://github.com/elyaroman/cloud-systems-and-technologies/blob/main/lab%205/images/asterisk/1.jpg" alt="1" title="title" style="width: 50%"> 
+  <img src="https://github.com/elyaroman/cloud-systems-and-technologies/blob/main/lab%205/images/asterisk/1.jpg" alt="1" title="title" style="width: 70%"> 
   
   <li>Создан новый Helm Chart</li>
   <img src="https://github.com/elyaroman/cloud-systems-and-technologies/blob/main/lab%205/images/asterisk/2.jpg" alt="2" title="title">
