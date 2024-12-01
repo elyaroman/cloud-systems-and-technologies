@@ -16,7 +16,7 @@
 
   <i>Файлы, собственно, прилагаются:</i>
   service.yaml
-  '''
+  ```
       apiVersion: v1
   kind: Service
   metadata:
@@ -29,10 +29,10 @@
       port: 80
       targetPort: 80
     type: NodePort
-  '''
+  ```
 
   deployment.yaml
-  '''
+  ```
     apiVersion: apps/v1
   kind: Deployment
   metadata:
@@ -52,8 +52,7 @@
           image: nginx:1.14.2
           ports:
           - containerPort: 80
-  '''
-  
+  ```
   
   <li>Устанавливаем Helm Chart в кластере кубера</li>
   <img src="https://github.com/elyaroman/cloud-systems-and-technologies/blob/main/lab%205/images/asterisk/4.jpg" alt="4" title="title">
