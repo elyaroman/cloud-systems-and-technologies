@@ -8,7 +8,7 @@
 <ol>
   <li>Запускаем консоль с правами администратора (иначе ничерта не заработает и не установится)</li>
   <li>Установка chocolatey</li> 
-  <img src="https://github.com/elyaroman/cloud-systems-and-technologies/blob/main/lab%205/images/basic/1-1.jpg" alt="1-1" title="title>
+  <img src="https://github.com/elyaroman/cloud-systems-and-technologies/blob/main/lab%205/images/basic/1-1.jpg" alt="1-1" title="title">
 
   <li>Перезапуск консоли - о святая перезагрузочка</li>
 
@@ -73,3 +73,10 @@
   <li>Метрика authorization_duration_seconds_sum показывает сколько тратит пользователь на авторизацию</li>
   <img src="https://github.com/elyaroman/cloud-systems-and-technologies/blob/main/lab%205/images/basic/2-11.jpg" alt="2-11" title="title"> 
 </ol>
+
+<b><h3>Выводы</h3></b>
+<i>"Мы живы, мы живы! А теперь.... я тебя убью!!" (с) лаба</i>
+
+А вообще стоит сказать, что лаба стоила несколько (десятков) нервов, но тем не менее, огромная радость, что всё в итоге запустилось! Проблема прежде всего была в установке, долго было непонятно, почему инструменты не хотят устанавливаться. Теперь запомнилось: надо всё устанавливать с правами администратора, тогда никто ругаться не будет. А еще в голове отложилась прекрасная картинка и прекрасный пример, как можно просматривать метрики сервиса. Наверняка это можно (и возможно даже нужно) будет применять в будущих проектах.
+После выполнения лабы чувство вот такое:
+<img src="https://github.com/elyaroman/cloud-systems-and-technologies/blob/main/lab%205/images/basic/power_cat.jpg" alt="power-cat" title="title">
