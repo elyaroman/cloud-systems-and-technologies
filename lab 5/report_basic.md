@@ -9,50 +9,61 @@
   <li>Запускаем консоль с правами администратора (иначе ничерта не заработает и не установится)</li>
   <li>Установка chocolatey</li> 
   <img src="https://github.com/elyaroman/cloud-systems-and-technologies/blob/main/lab%205/images/basic/1-1.jpg" alt="1-1" title="title">
+
   <li>Перезапуск консоли - о святая перезагрузочка</li>
+
   <li>choco --version, показывает версию - значит всё гут</li>
-  https://github.com/elyaroman/cloud-systems-and-technologies/blob/main/lab%205/images/basic/1-2.jpg
+  <img src=" https://github.com/elyaroman/cloud-systems-and-technologies/blob/main/lab%205/images/basic/1-2.jpg" alt="1-2" title="title">
+
   <li>Успешная установка minikube</li>
-  https://github.com/elyaroman/cloud-systems-and-technologies/blob/main/lab%205/images/basic/1-3.jpg
+  <img src="https://github.com/elyaroman/cloud-systems-and-technologies/blob/main/lab%205/images/basic/1-3.jpg" alt="1-3" title="title">
+  
   <li>Установка helm - и вполне себе успешная</li>
-  https://github.com/elyaroman/cloud-systems-and-technologies/blob/main/lab%205/images/basic/1-4.jpg
-  https://github.com/elyaroman/cloud-systems-and-technologies/blob/main/lab%205/images/basic/1-5.jpg
+  <img src="https://github.com/elyaroman/cloud-systems-and-technologies/blob/main/lab%205/images/basic/1-4.jpg" alt="1-4" title="title">
+  <img src="https://github.com/elyaroman/cloud-systems-and-technologies/blob/main/lab%205/images/basic/1-5.jpg" alt="1-5" title="title">
+    
   <li>Запуск minikube и проверка статуса кластера</li>
-  https://github.com/elyaroman/cloud-systems-and-technologies/blob/main/lab%205/images/basic/1-6.jpg
+  <img src="https://github.com/elyaroman/cloud-systems-and-technologies/blob/main/lab%205/images/basic/1-6.jpg" alt="1-6" title="title">
+ 
   <li>Добавление репозитория с чарта Prometheus</li>
-  https://github.com/elyaroman/cloud-systems-and-technologies/blob/main/lab%205/images/basic/1-7.jpg
+  <img src="https://github.com/elyaroman/cloud-systems-and-technologies/blob/main/lab%205/images/basic/1-7.jpg" alt="1-7" title="title">
+  
+
   <li>Установка Prometheus</li>
-  https://github.com/elyaroman/cloud-systems-and-technologies/blob/main/lab%205/images/basic/1-8.jpg
+  <img src="https://github.com/elyaroman/cloud-systems-and-technologies/blob/main/lab%205/images/basic/1-8.jpg" alt="1-8" title="title">
+ 
   <li>Добавление репозитория с чарта Grafana</li>
-  https://github.com/elyaroman/cloud-systems-and-technologies/blob/main/lab%205/images/basic/1-9.jpg
+  <img src="https://github.com/elyaroman/cloud-systems-and-technologies/blob/main/lab%205/images/basic/1-9.jpg" alt="1-9" title="title">
+  
    <li>Установка Grafana</li>
-  https://github.com/elyaroman/cloud-systems-and-technologies/blob/main/lab%205/images/basic/1-11.jpg
+  <img src="https://github.com/elyaroman/cloud-systems-and-technologies/blob/main/lab%205/images/basic/1-11.jpg" alt="1-11" title="title">
+  
    <li>Обновляем репу</li>
-  https://github.com/elyaroman/cloud-systems-and-technologies/blob/main/lab%205/images/basic/1-10.jpg
+  <img src="https://github.com/elyaroman/cloud-systems-and-technologies/blob/main/lab%205/images/basic/1-10.jpg" alt="1-10" title="title">  
 </ol>
 
 <h4>Grafana-nananana</h4>
 <ol>
   <li>Используем утилиту certutil, которая доступна по умолчанию в Windows, чтоб выкрасть пароль как истинные хацкеры</li>
-  скрин 1
+  <img src="" alt="1-4" title="title"> скрин 1
   <li>Меняем пароль для простоты ввода</li>
-  скрин 3.1
+  <img src="" alt="1-4" title="title">   скрин 3.1
   <li>Перенаправляем локальный порт 3000 на порт 80 сервиса Grafana</li>
-  скрин 2
+   <img src="" alt="1-4" title="title">  скрин 2
   <li>Теперь по урле http://localhost:3000 доступна графана</li>
-  скрин 3
+   <img src="" alt="1-4" title="title">  скрин 3
   <li>Вводим логин-пароль - все гут</li>
-  скрин 5
+  <img src="" alt="1-4" title="title">   скрин 5
   <li>Алиллуя господи запустилось</li>
-  скрин 6
+  <img src="" alt="1-4" title="title">   скрин 6
   <li>Добавляем источник данных</li>
-  скрин 7
+  <img src="" alt="1-4" title="title">   скрин 7
   <li>В настройках указываем ур<s>су</s>лу http://prometheus-server.default.svc.cluster.local</li>
-  скрин 8
+  <img src="" alt="1-4" title="title">   скрин 8
   <li>Затем сохранили - добавляем визуализацию</li>
-  скрин 9
+  <img src="" alt="1-4" title="title">   скрин 9
   <li>Метрика etcd_request_duration_seconds_count показывает общее кол-во запросов, выполненных к etcd - система хранения всяких конфиг-данных, что позволяет оценить общую нагрузку на систему</li>
-  скрин 10
+  <img src="" alt="1-4" title="title">   скрин 10
   <li>Метрика authorization_duration_seconds_sum показывает сколько тратит пользователь на авторизацию</li>
-  скрин 11
+  <img src="" alt="1-4" title="title">   скрин 11
 </ol>
