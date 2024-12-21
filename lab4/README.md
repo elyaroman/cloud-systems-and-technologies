@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/a1ccd9fa-2043-4efb-ad8d-47a012d3b091)# 4 Лабораторная (обычная)
+# 4 Лабораторная (обычная)
 ## 1. Задачи
 - Написать “плохой” CI/CD файл, который работает, но в нем есть не менее пяти “bad practices” по написанию CI/CD
 - Написать “хороший” CI/CD, в котором эти плохие практики исправлены
@@ -74,6 +74,7 @@
 1) Был добавлен шаг установки vault
 
 ![image](https://github.com/user-attachments/assets/d14ddfb2-6d35-472b-b27f-3f8cba207a01)
+
 2) Добавлено получение секрета из vault
 
 ![image](https://github.com/user-attachments/assets/07759307-f8c2-4109-aff7-8096a8eec5f4)
